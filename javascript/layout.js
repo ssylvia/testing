@@ -1,23 +1,3 @@
-$(document).ready(function(e) {
-    $("#modalScreen").fadeTo("fast","0.7");
-	$("#splashScreen").css("left",($(document).width()-800)/2);
-	$("#splashScreen").css("top",($(document).height()-500)/2);
-	$("#splashScreen").fadeIn("slow");
-	$("#introImg").load(function(e) {
-		if(($("#introImg").height()) == 377){
-			$("#introImg").css("margin-top","25px");
-		}
-		else{
-			$("#introImg").css("margin-top",((427-($("#introImg").height()))/2));
-		}
-		$("#introImg").show();
-	});
-	$("#continue").click(function(e) {
-        $("#modalScreen").fadeOut();
-		$("#splashScreen").fadeOut();
-    });
-});
-
 function setupLayout(){
 	if(configOptions.webmaps.length > 1){
 		//dojo.style(dojo.byId("banner"), "height", "150px");

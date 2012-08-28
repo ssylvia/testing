@@ -4,8 +4,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
 	<title>Storytelling Side Panel</title>
-    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.1/js/dojo/dijit/themes/tundra/tundra.css">
-    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.1/js/esri/dijit/css/Popup.css"> 
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.0/js/dojo/dijit/themes/tundra/tundra.css">
+    <link rel="stylesheet" type="text/css" href="http://serverapi.arcgisonline.com/jsapi/arcgis/3.0/js/esri/dijit/css/Popup.css"> 
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="css/popup.css"/>
     
@@ -14,8 +14,7 @@
         parseOnLoad: true
       };
     </script>
-    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.1compact"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="http://serverapi.arcgisonline.com/jsapi/arcgis/?v=3.0compact"></script>
 	<script type="text/javascript" src="javascript/map.js"></script>
     <script type="text/javascript" src="javascript/layout.js"></script>
     <script type="text/javascript">
@@ -26,11 +25,7 @@
       configOptions = {
         //The ID for the map from ArcGIS.com
         webmaps : [{
-			"id" : "679bd95e2a26491b99433f6ae10981f5"
-		},{
-    		"id" : "7d5241288c8e476496a7a83699ac6c91"
-		},{
-    		"id" : "13da391fc4a8486885c6dcafed59939f"
+			"id" : "e5359a951a5b4b1dacff6f4c79cda9e7"
 		}],
         //Enter a title, if no title is specified, the webmap's title is used.
         title : "",
@@ -49,7 +44,7 @@
 		//Loop through time animation: choose true or false
 		loop : true,
 		//Sync maps scale and location: choose true or false
-		syncMaps : false,
+		syncMaps : true,
         //If the webmap uses Bing Maps data, you will need to provided your Bing Maps Key
         bingmapskey : "",
         //specify a proxy url if needed
@@ -66,7 +61,7 @@
       //show map on load 
       dojo.addOnLoad(init);
     </script>
-    Enter
+    
     <!--Social Media Links-->
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 <script type="text/javascript">stLight.options({publisher: "77225c91-2742-42f7-b1b4-bddda99a9bde"}); </script>
@@ -147,20 +142,6 @@
     		<img id="loadingImg" alt="" src="images/progressBar.gif">
    		</div>
     </div>
-    
-    
-    <div id="modalScreen"></div>
-    <div id="splashScreen" dojotype="dijit.layout.BorderContainer" design="headline" gutters="false">
-    	<div id="introBanner" dojotype="dijit.layout.ContentPane" region="top">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
-        <div id="introContent" dojotype="dijit.layout.BorderContainer" region="center">
-        	<div id="introImgCon" dojotype="dijit.layout.ContentPane" region="center">
-				<img id="introImg" src="http://farm9.staticflickr.com/8157/7456285360_aa917071d2_z.jpg" alt="">    
-            </div>
-        	<div id="introText" dojotype="dijit.layout.ContentPane" region="left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.<br><br>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.<br><br><br>
-            <span id="continue" class="clean-gray">Explore the maps</span>
-            </div><!--introText-->
-        </div><!--/introContent-->
-    </div><!--/splashScreen-->
     
     
   </body>
